@@ -1,0 +1,282 @@
+/*ROOT*/
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Raleway",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #2f3138; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0e1b4d; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #f82249; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.65);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #f82249; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.bg-newman{
+            background-color: #111745;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /*font-family: 'Arial', sans-serif;*/
+        }
+        #particles-js {
+            background:#0b0d1b; /*color principal*/
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .main-section {
+            height: 100vh; /* Pantalla completa */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .coming-soon {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-about{
+            height: 100vh;
+            display: flex;
+            /*padding: 60px 0 40px 0;            
+            align-items: center;*/
+
+        }
+
+        .section-logo{
+            padding: 40px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .register-btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            background-color: #A34042;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        .register-btn:hover {
+            background-color: #6D2B2C;
+        }
+
+        /* Estilo para el menú de navegación */
+        .navbar {
+            padding: 10px 0;
+            transition: background-color 0.3s ease; /* Transición suave cuando cambie el fondo */
+        }
+        .navbar-brand img {
+            /*max-height: 2em;*/
+            max-height: 35px;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-nav .nav-item {
+            padding: 0 15px;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: .9rem;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #A34042 !important;
+        }
+
+        /* Botón Volver al Inicio */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none; /* Inicialmente oculto */
+            background-color: #A34042;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 9999; /* Asegura que el botón se muestre sobre otros elementos */
+        }
+
+        .back-to-top:hover {
+            background-color: #6D2B2C;
+        }
+
+        /* Estilo para la sección de Expositores */
+        .exhibitors-section {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+        }
+        .exhibitor-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+            background-color: white;
+        }
+        .exhibitor-photo {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .exhibitor-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .exhibitor-title {
+            font-size: 1.1rem;
+            color: #A34042;
+        }
+
+
+
+/* Estilo para el contador */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-box {
+    font-size: 4rem;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, .4);
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    color: #fff;
+    font-weight: bold;
+}
+
+.countdown-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+
+
+
+/*Títulos de secciones*/
+.section-title {
+  text-align: center;
+  padding: 4em 0 0 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/*EFECTO HOVER PARA LOS LOGOS*/
+.logofiltro{
+    /*transition: filter 0.2s ease;
+    filter: grayscale(100%);*/
+    transition: transform 0.35s ease; /* Transición suave */
+}
+
+.logofiltro:hover{
+    /*filter: grayscale(0%);*/
+    transform: scale(1.1); /* zoom 110% */
+}
+
+.contenido{
+    padding: 3em 0;
+}
+
+.contenido:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
